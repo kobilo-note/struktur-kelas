@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kelas VIII</title>
+  <style>
+    :root{
+      --guru: #c62828;
+      --siswa: #1565c0;
+      --bg1 : #e0f7fa;
+      --bg2 : #f5f7ff;
+      --card: #ffffff;
+      --shadow: 0 4px 12px rgba(0,0,0,.10);
+    }
+    *{box-sizing:border-box;margin:0;padding:0;font-family:"Segoe UI",Arial,Helvetica,sans-serif;}
+    body{
+      background:linear-gradient(135deg, var(--bg1), var(--bg2));
+      min-height:100vh;
+      padding:40px 20px;
+      color:#333;
+    }
+    h1{
+      text-align:center;
+      margin-bottom:40px;
+      font-size:2.2em;
+      letter-spacing:1px;
+    }
+    .container{
+      max-width:900px;
+      margin:auto;
+    }
+    /* Walikelas */
+    .guru-card{
+      background:var(--card);
+      border-left:8px solid var(--guru);
+      box-shadow:var(--shadow);
+      padding:20px 25px;
+      border-radius:10px;
+      margin-bottom:35px;
+      display:flex;
+      align-items:center;
+      gap:15px;
+      transition:transform .3s;
+    }
+    .guru-card:hover{transform:translateY(-3px);}
+    .guru-card .icon{
+      font-size:2.2em;
+    }
+    .guru-card .nama{
+      font-size:1.4em;
+      font-weight:bold;
+      color:var(--guru);
+    }
+
+    /* Siswa */
+    .grid-siswa{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+      gap:22px;
+    }
+    .siswa-card{
+      background:var(--card);
+      border-left:6px solid var(--siswa);
+      box-shadow:var(--shadow);
+      padding:18px 20px;
+      border-radius:8px;
+      transition:transform .3s, box-shadow .3s;
+      position:relative;
+      overflow:hidden;
+    }
+    .siswa-card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 8px 20px rgba(0,0,0,.12);
+    }
+    .siswa-card .nama{
+      font-size:1.15em;
+      font-weight:bold;
+      color:var(--siswa);
+      margin-bottom:6px;
+    }
+    .siswa-card .bidang{
+      font-size:.92em;
+      color:#444;
+    }
+    .siswa-card .julukan{
+      font-size:.85em;
+      color:#666;
+      font-style:italic;
+      margin-top:4px;
+    }
+    /* ornamen */
+    .siswa-card::before{
+      content:'“';
+      position:absolute;
+      bottom:-18px; right:10px;
+      font-size:4em;
+      color:rgba(33,150,243,.08);
+      pointer-events:none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>🎓 Daftar Kelas VIII 🎓</h1>
+
+    <!-- Walikelas -->
+    <div class="guru-card">
+      <div class="icon">👨‍🏫</div>
+      <div>
+        <div class="nama">Emelda Fasya S.pd</div>
+        <div style="color:#555;">Walikelas</div>
+      </div>
+    </div>
+
+    <!-- Siswa -->
+    <div class="grid-siswa">
+      <div class="siswa-card">
+        <div class="nama">1. Andin Adelia Chanel</div>
+        <div class="bidang">Bidang: bendahara & editor</div>
+        <div class="julukan">Julukan: “si rajin”</div>
+      </div>
+
+      <div class="siswa-card">
+        <div class="nama">2. Angelina</div>
+        <div class="bidang">Bidang: olahraga</div>
+        <div class="julukan">Julukan: “yapping handal”</div>
+      </div>
+
+      <div class="siswa-card">
+        <div class="nama">3. Aprilia Fransisca</div>
+        <div class="bidang">Bidang: editor</div>
+        <div class="julukan">Julukan: “pemarah”</div>
+      </div>
+
+      <div class="siswa-card">
+        <div class="nama">4. Bun Melvin Charvaleo</div>
+        <div class="bidang">Bidang: -</div>
+        <div class="julukan">Julukan: “-”</div>
+      </div>
+
+      <div class="siswa-card">
+        <div class="nama">5. Bun Su Cin</div>
+        <div class="bidang">Bidang: -</div>
+        <div class="julukan">Julukan: “drama”</div>
+      </div>
+
+      <div class="siswa-card">
+        <div class="nama">6. Edison Marcelino Liu</div>
+        <div class="bidang">Bidang: kebersihan</div>
+        <div class="julukan">Julukan: “barongsai”</div>
+      </div>
+
+      <div class="siswa-card">
+        <div class="nama">7. Fabio Fernandes</div>
+        <div class="bidang">Bidang: drumband</div>
+        <div class="julukan">Julukan: “Drama”</div>
+      </div>
+
+      <div class="siswa-card">
+        <div class="nama">8. Feli Yana</div>
+        <div class="bidang">Bidang: -</div>
+        <div class="julukan">Julukan: “yapping”</div>
+      </div>
+
+      <div class="siswa-card">
+        <div class="nama">9. Florenca</div>
+        <div class="bidang">Bidang: -</div>
+        <div class="julukan">Julukan: “yapping”</div>
+      </div>
+
+      <div class="siswa-card">
+        <div class="nama">10. Greysen William Phiong</div>
+        <div class="bidang">Bidang: wakil ketua kelas & olahraga(voli)</div>
+        <div class="julukan">Julukan: “pemotor”</div>
+      </div>
+
+      <div class="siswa-card">
+        <div class="nama">11. Hosea Natanael</div>
+        <div class="bidang">Bidang: olahraga (badminton)</div>
+        <div class="julukan">Julukan: “pemotor”</div>
+      </div>
+
+      <div class="siswa-card">
+        <div class="nama">12. Jesen</div>
+        <div class="bidang">Bidang: olahraga</div>
+        <div class="julukan">Julukan: “-”</div>
+      </div>
+
+      <div class="siswa-card">
+        <div class="nama">13. Kevin</div>
+        <div class="bidang">Bidang: -</div>
+        <div class="julukan">Julukan: “-”</div>
+      </div>
+
+      <div class="siswa-card">
+        <div class="nama">14. Leonard RIchie Yu</div>
+        <div class="bidang">Bidang: -</div>
+        <div class="julukan">Julukan: “orkay”</div>
+      </div>
+
+      <div class="siswa-card">
+        <div class="nama">15. Marco Genesius</div>
+        <div class="bidang">Bidang: -</div>
+        <div class="julukan">Julukan: “orkay”</div>
+      </div>
+
+      <div class="siswa-card">
+        <div class="nama">16. Merisca Kristina</div>
+        <div class="bidang">Bidang: -</div>
+        <div class="julukan">Julukan: “player roblox”</div>
+      </div>
+
+      <div class="siswa-card">
+        <div class="nama">17. Novi</div>
+        <div class="bidang">Bidang: ketua kelas & editor</div>
+        <div class="julukan">Julukan: “sketsa handal”</div>
+      </div>
+
+      <div class="siswa-card">
+        <div class="nama">18. Riski Ade Saputra</div>
+        <div class="bidang">Bidang: keamanan</div>
+        <div class="julukan">Julukan: “pemarah”</div>
+      </div>
+
+      <div class="siswa-card">
+        <div class="nama">19. Shiren Chin</div>
+        <div class="bidang">Bidang: -</div>
+        <div class="julukan">Julukan: “drama”</div>
+      </div>
+
+      <div class="siswa-card">
+        <div class="nama">20. Stevany Liu</div>
+        <div class="bidang">Bidang: -</div>
+        <div class="julukan">Julukan: “Pemarah”</div>
+      </div>
+
+      <div class="siswa-card">
+        <div class="nama">21. Steve David</div>
+        <div class="bidang">Bidang: website</div>
+        <div class="julukan">Julukan: “pemalas”</div>
+      </div>
+
+      <div class="siswa-card">
+        <div class="nama">22. Tjhin Ni Ni</div>
+        <div class="bidang">Bidang: sekretaris</div>
+        <div class="julukan">Julukan: “sketsa handal”</div>
+      </div>
+
+      <div class="siswa-card">
+        <div class="nama">23. valerie artanti</div>
+        <div class="bidang">Bidang: -</div>
+        <div class="julukan">Julukan: “drama”</div>
+      </div>
+
+      <div class="siswa-card">
+        <div class="nama">24. Vinka Aprilia</div>
+        <div class="bidang">Bidang: -</div>
+        <div class="julukan">Julukan: “drama”</div>
+      </div>
+
+      <div class="siswa-card">
+        <div class="nama">25. Vivi</div>
+        <div class="bidang">Bidang: -</div>
+        <div class="julukan">Julukan: “Yapping”</div>
+      </div>
+
+      <div class="siswa-card">
+        <div class="nama">26. Jeselyn Preticia</div>
+        <div class="bidang">Bidang: -</div>
+        <div class="julukan">Julukan: “Yapping”</div>
+      </div>
+    </div><!-- /grid-siswa -->
+  </div><!-- /container -->
+
+</body>
+</html>
